@@ -1,0 +1,12 @@
+BIOFISIC ANALYTICS v2
+
+Netlify (visual)
+  └── Netlify Functions (segredo e API)
+       └── Supabase public.biofisic_dashboard_tab
+            └── schema analytics
+                 ├── RPCs por aba
+                 ├── materialized views (cache, refresh 5 min)
+                 └── views normalizadas
+                      └── public.* (fontes das APIs, somente leitura)
+
+SEM RENDER.
