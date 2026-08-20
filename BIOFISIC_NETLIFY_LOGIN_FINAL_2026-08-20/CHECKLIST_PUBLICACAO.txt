@@ -1,0 +1,56 @@
+BIOFISIC ANALYTICS — CHECKLIST DE PUBLICAÇÃO
+
+GITHUB
+[ ] Repositório novo e vazio
+[ ] public/index.html
+[ ] public/login.html
+[ ] public/assets/login-unit-lorena.jpeg
+[ ] public/dashboard_vendas_mar_abr_mai_2026.html idêntico ao public/index.html
+[ ] public/data/heatmap-approved-2026-08.json
+[ ] public/data/cohort-retention-approved-2026.json
+[ ] netlify/functions/render-tab.mjs
+[ ] netlify/functions/export-xlsx.mjs
+[ ] netlify/edge-functions/auth.mjs
+[ ] netlify.toml na raiz
+
+NETLIFY
+[ ] Branch main
+[ ] Base directory vazio
+[ ] Build command vazio
+[ ] Publish directory public
+[ ] Functions directory netlify/functions
+
+ENVIRONMENT VARIABLES
+[ ] SUPABASE_URL
+[ ] SUPABASE_SECRET_KEY
+[ ] DASHBOARD_USER
+[ ] DASHBOARD_PASSWORD
+[ ] DASHBOARD_SESSION_SECRET
+
+NÃO CONFIGURAR
+[ ] Nenhuma variável RENDER_*
+[ ] Nenhuma secret key dentro do HTML
+
+TESTE FUNCIONAL
+[ ] Acesso anônimo redireciona para /login.html
+[ ] Login inválido exibe erro sem abrir o dashboard
+[ ] Login válido abre o dashboard e cria sessão segura
+[ ] Visão Geral
+[ ] Vendas
+[ ] Cancelamentos
+[ ] Financeiro
+[ ] Frequência
+[ ] Análise
+[ ] Sincronizar agora
+[ ] Exportar XLSX
+[ ] Heatmap abre na aba Frequência
+[ ] Heatmap recalcula ao marcar/desmarcar unidades
+[ ] Cohort abre no final da aba Cancelamentos
+[ ] Cohort alterna entre Rede e cada unidade
+[ ] Teste desktop (1440 px)
+[ ] Teste tablet (1024 px)
+[ ] Teste celular (390 px)
+
+SUPABASE
+[ ] NÃO apagar basededadosEVO
+[ ] NÃO apagar tabelas public alimentadas pelas APIs
